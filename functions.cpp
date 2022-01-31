@@ -9,7 +9,7 @@
 #include "functions.h"
 
 
-
+using namespace std;
 
 
 std::vector<std::vector<double>> read_matrix(const std::string& FILE_NAME)
@@ -39,8 +39,8 @@ std::vector<std::vector<double>> read_matrix(const std::string& FILE_NAME)
 			matrix.push_back(row);
 		}
 	}
-
-	return matrix;
+	else (cout << "Incorrect file passed as parameter. Please pass correct text files.") << endl;
+	return matrix;	
 }
 
 void print_matrix(const std::string& FILE_NAME, std::vector<std::vector<double>> matrix)
